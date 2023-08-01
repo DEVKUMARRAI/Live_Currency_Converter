@@ -7,17 +7,39 @@
     <title>Curreny Converter</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="./countries.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Curreny Converter</div>
-        <div class="part-1">
-            <h2></h2>
-            <input type="number">
+   <div class="container">
+    <h2>Curreny Converter</h2>
+    <form>
+        <div class="amount">
+            <p>Amount</p>
+            <input type="text" value="1">
         </div>
-        <div class="part-2">
-            <h2></h2>
+        <div class="convert-box">
+            <div class="from">
+                <p>From</p>
+                <div class="select-input">
+                    <img src="https://flagcdn.com/48x36/us.png">
+                    <select></select>
+                </div>
+            </div>
+            <div class="reverse"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+                <p>To</p>
+                <div class="select-input">
+                    <img src="https://flagcdn.com/48x36/gb.png">
+                    <select></select>
+                </div>
+            </div>
+            <div class="result">Getting Exchange Rates...</div>
+            <button>Get Exchange Rate</button>
         </div>
-    </div>
+    </form>
+   </div>
 </body>
 </html>
